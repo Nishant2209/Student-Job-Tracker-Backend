@@ -18,8 +18,9 @@ jobRouter.get("/", async (req, res, next) => {
 // Create job
 jobRouter.post("/", validateJob, async (req, res, next) => {
   try {
+    const { _id, ...jobData } = req.body; // Ignore _id from user
     const job = new Job({
-      ...req.body,
+      ...jobData,
       user: req.user._id,
     });
 
