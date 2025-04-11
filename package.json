@@ -1,0 +1,28 @@
+{
+  "name": "student-job-tracker-server",
+  "version": "1.0.0",
+  "description": "Server for the the Student Job Tracker frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production nodemon index.js",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "node-cache": "^5.1.2",
+    "nodemon": "^3.1.9",
+    "validator": "^13.15.0",
+    "zod": "^3.24.2"
+  }
+}
